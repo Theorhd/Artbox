@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+html, body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: auto;
+    padding: 45px 15px;
+}
+
+#logo {
+    width: 260px;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    max-width: 1080px;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+#liste-oeuvres {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.oeuvre {
+    width: 33.33%;
+    padding: 15px;
+}
+
+.oeuvre img {
+    width: 100%;
+}
+
+.oeuvre h2, #detail-oeuvre h1 {
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.oeuvre .description, #detail-oeuvre .description {
+    font-style: italic;
+    margin-top: 0;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+#detail-oeuvre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    margin-bottom: 100px;
+    margin-top: 75px;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+#img-oeuvre {
+    margin-right: 25px;
+}
+
+#img-oeuvre img {
+    max-width: 470px;
+    margin: auto;
+    display: block;
+}
+
+#contenu-oeuvre {
+    max-width: 470px;
+}
+/*Page 404*/
+.notFound{
+    display: flex;
+    justify-content: space-around;
+}
+.notFound-txt{
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    text-align: left;
+    color: #007dfe;
+    align-items: baseline;
+    margin-top: 50px;
+}
+.notFound-txt h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 70px; 
+    margin: 35px 0 0 0;
+    position: relative;
+    right: 1%;
+} 
+.notFound-txt h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    margin: 35px 0 0 0;
+}
+.notFound-txt p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 35px 0 0 .9375rem;
+}
+.notFound-img{
+    display: flex;
+    width: 45%;
+}
+.notFound img{
+    display: flex;
+    width: 100%;
+}
+.notFound-btn{
+    margin-top: 40px;
+    position: relative;
+    left: 22.5%;
+}
+.notFound-btn button{
+    padding: 15px;
+    background-color: #007dfe;
+    border: 0px;
+    border-radius: 10px;
+    color: white;
+}
+.notFound-btn button:hover{
+    background-color: #0062d1;
+}
+/**/
+
+
+@media (max-width: 850px) {
+    .oeuvre {
+        width: 50%;
+    }
+
+    #img-oeuvre {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    #img-oeuvre img {
+        width: 100%;
+    }
+
+    #contenu-oeuvre {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .oeuvre {
+        width: 100%;
+    }
+
+    #logo {
+        width: 200px;
+    }
+}
